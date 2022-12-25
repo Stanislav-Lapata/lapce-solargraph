@@ -1,9 +1,10 @@
 name = "lapce-solargraph"
 version = "0.1.0"
 author = "Stanislav Lapata"
-display-name = "Solargraph"
-description = "Solargraph for Lapce"
+display-name = "Ruby (solargraph)"
+description = "Ruby plugin for the Lapce Editor - Powered by solargraph"
 wasm = "bin/lapce-solargraph.wasm"
+repository = "https://github.com/Stanislav-Lapata/lapce-solargraph"
 
 [activation]
 language = ["ruby"]

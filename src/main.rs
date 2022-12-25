@@ -15,11 +15,8 @@ register_plugin!(State);
 
 fn initialize(params: InitializeParams) -> Result<()> {
     let document_selector: DocumentSelector = vec![DocumentFilter {
-        // lsp language id
         language: Some(String::from("ruby")),
-        // glob pattern
         pattern: Some(String::from("**/*.rb")),
-        // like file:
         scheme: None,
     }];
     let mut server_args = vec![];
