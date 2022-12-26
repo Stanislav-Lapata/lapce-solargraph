@@ -1,5 +1,5 @@
 name = "lapce-solargraph"
-version = "0.1.1"
+version = "0.1.2"
 author = "Stanislav Lapata"
 display-name = "Ruby (solargraph)"
 description = "Ruby plugin for the Lapce Editor - Powered by solargraph"
@@ -10,3 +10,23 @@ icon = "assets/ruby.png"
 [activation]
 language = ["ruby"]
 workspace-contains = ["*/Gemfile", "*/*.gemspec"]
+
+[config.serverPath]
+default = "solargraph"
+description = "Path to the solargraph command."
+
+[config.serverArgs]
+default = ["stdio"]
+description = "LSP server arguments to pass when launching."
+
+[config.formatting]
+default = true
+description = "Enable document formatting. The gem currently uses RuboCop for formatting."
+
+[config.diagnostics]
+default = true
+description = "Enable diagnostics reporting."
+
+[config.autoformat]
+default = true
+description = "Enable automatic formatting while typing."
