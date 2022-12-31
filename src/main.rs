@@ -53,7 +53,7 @@ fn initialize(params: InitializeParams) -> Result<()> {
 
     let server_uri = match VoltEnvironment::operating_system().as_deref() {
         Ok("windows") => return Ok(()),
-        _ => Url::parse("urn:typescript-language-server")?,
+        _ => Url::parse("urn:solargraph")?,
     };
 
     PLUGIN_RPC.start_lsp(
